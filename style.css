@@ -90,6 +90,31 @@ form{
 h2{
     text-align: center;
 }
+#Contact_us {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    font-family: "Roboto-Italic";
+}
+#Contact_us li {
+    list-style: none;
+}
+#Address {
+    flex-grow: 2;
+}
+#Phone {
+    flex-grow: 1;
+}
+#Email {
+    flex-grow: 1;
+}
+#Facebook {
+    flex-grow: 1;
+}
+#Instagram {
+    flex-grow: 1;
+}
+
 body > footer {
     background-color: aqua;
     display: flex;
