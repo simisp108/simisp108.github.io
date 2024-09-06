@@ -9,23 +9,23 @@
     <title>Λεξάριθμος Private Tutoring</title>
 </head>
 <body>
-    <header>
+    <header id="header_grid">
         <!-- make this a comment -->
-         <h1 id="main_title">Lexarithmos</h1>
-            <h2> Private Tutoring</h2>
-         <nav>
+        <h1 id="main_title">Lexarithmos</h1>
+        <h2 id="main_subtitle"> Private Tutoring</h2>
+        <nav>
             <ul id = "main_links">
                 <li>
-                    <a href="" class="navbutton">Home</a>
+                    <a href="#top" class="navbutton">Home</a>
                 </li>
                 <li>
-                    <a href="" class="navbutton">About us</a>
+                    <a href="#About_us" class="navbutton">About us</a>
                 </li>
                 <li>
-                    <a href="" class="navbutton">Contact us</a>
+                    <a href="#Sign_up_form" class="navbutton">Sign up</a>
                 </li>
             </ul>
-         </nav>
+        </nav>
     </header>
     <main>
         <!--Main content of the website contained here-->
@@ -56,11 +56,11 @@
                 <article>
                     <header>
                         <!-- Article's Header goes here-->
-                         <h2>Lexarithmos</h2>
-                         <h3>Epexigisi</h3>
+                        <h2 id="About_us">About us</h2>
+                        <h3>What is Lexarithmos</h3>
                     </header>
                     <main>
-                        <p>Some text about maths</p>
+                        <p>Some text about the institute</p>
                         <p>Another paragraph</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam exercitationem minima animi nam ex expedita.</p>
                         <blockquote>"Pan metron ariston"
@@ -77,12 +77,12 @@
                 <article>
                     <header>
                         <!-- Article's Header goes here-->
-                         <h2>Lexarithmos</h2>
-                         <h3>Epexigisi</h3>
+                         <h2 id="Subjects">Subjects</h2>
+                         <h3>What we teach</h3>
                     </header>
                     <main>
                         <p>Some text about maths</p>
-                        <p>Another paragraph</p>
+                        <p>Some text about Greek</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam exercitationem minima animi nam ex expedita.</p>
                         <blockquote>"Pan metron ariston"
                             <cite></cite>
@@ -92,14 +92,14 @@
                         <h2>Author: Simonas Petridis</h2>
                         <img src="https://placebear.com/100/100" alt="A profile picture">
                         <h3>Created: Summer 2024</h3>
-                        <a href="https://el.wiktionary.org/wiki/%CE%BB%CE%B5%CE%BE%CE%AC%CF%81%CE%B9%CE%B8%CE%BC%CE%BF%CF%82" target="_blank">Τί είναι ο Λεξάριθμος;</a>
+                        <a href="https://el.wiktionary.org/wiki/%CE%BB%CE%B5%CE%BE%CE%AC%CF%81%CE%B9%CE%B8%CE%BC%CE%BF%CF%82" target="_blank">What does Lexarithmos mean?</a>
                     </footer>
                 </article>
             </div>
         </div>
         
         <hr>
-        <h2>Sign Up Form</h2>
+        <h2 id="Sign_up_form">Sign Up Form</h2>
         <form action="" method="">
             <label for="first_name">First Name:</label>
             <input type="text" id="first_name" name="first_name" required>
@@ -110,25 +110,23 @@
             <label for="email">Email:</label>
             <input type="email" name="email" id="email">
             <br>
-            <label for="password">Password:</label>
-            <input type="password" name="password" id="password">
-            <br>
             <label for="gender">Gender of Child:</label>
             <input type="radio" name="gender" id="male" value="male">
-            <label for="male">Arren</label>
+            <label for="male">Male</label>
             <input type="radio" name="gender" id="female" value="female">
-            <label for="female">Thili</label>
+            <label for="female">Female</label>
             <br>
-            <label for="mathima">Epilogi Mathimaton</label>
+            <label for="mathima">Subject Choice</label>
             <select name="mathima" id="mathima">
-                <option value="proisagogikes">Proisagogikes</option>
+                <option value="math_greek">Maths and Greek</option>
+                <option value="math_english">Maths and English</option>
                 <option value="sat">SATs</option>
                 <option value="igcse">IGCSEs</option>
-                <option value="alevel">A-level</option>
+                <option value="alevel">A-levels</option>
             </select>
             <br>
-            <label for="bio">Biography:</label>
-            <textarea name="bio" id="bio" cols="10" rows="10"></textarea>
+            <label for="additional_information">Additional Information:</label>
+            <textarea name="additional_information" id="additional_information" cols="30" rows="10"></textarea>
             <br>
             <input type="checkbox" name="subscribe" id="subscribe">
             <label for="subscribe">Subscribe</label>
@@ -145,7 +143,7 @@
             <nav>
                 <ul id="footer_links">
                     <div>
-                        <li><a href="">Home</a></li>
+                        <li><a href="#top">Home</a></li>
                         <li><a href="">About us</a></li>
                         <li><a href="">Contact</a></li>
                         <li><a href="">Services</a></li>

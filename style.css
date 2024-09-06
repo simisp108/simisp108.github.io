@@ -19,29 +19,34 @@ html {
     font-weight: normal;
     font-style: italic;
 }
+#header_grid {
+    display: grid;
+    grid-template-areas: 
+    "main_title"
+    "main_subtitle"
+    "nav";
+}
 #main_title {
     display: flex;
     margin: 0px;
-    padding: 3% 3%;
+    padding: 3% 3% 0%;
     align-items: center;
     justify-content: center;
     font-family: "Roboto-Bold" , sans-serif;
     font-size: 5vw;
-    border-bottom: 5px solid white;
 }
-#main_title>h2 {
+#main_subtitle {
     display: flex;
     margin: 0px;
-    padding: 3% 3%;
+    padding: 0% 3% 3%;
     align-items: center;
     justify-content: center;
     font-family: "Roboto-Bold" , sans-serif;
-    font-size: 3vw;
+    font-size: 4vw;
     border-bottom: 5px solid white;
 }
 #main_links {
     display: flex;
-    flex-grow: 1;
     align-items: baseline;
     justify-content: space-around;
     font-size: 2vw;
