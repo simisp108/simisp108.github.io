@@ -1,5 +1,5 @@
 html {
-
+    scroll-behavior: smooth;
 }
 @font-face {
     font-family: "Roboto-Regular";
@@ -59,7 +59,12 @@ html {
     text-decoration: none;
     padding: 8px;
 }
-
+.anchor {
+    display: block;
+    height: 5vh;
+    margin-top: -5vh;
+    visibility: hidden;
+}
 body {
     font-family: Helvetica, Arial, sans-serif;
     margin: 0px;
@@ -68,64 +73,100 @@ body {
 body > header {
     background-color: aquamarine;
     color: white;
+    margin-bottom: 3vh;
 }
 #main_content {
     display: flex;
     justify-content: space-around ;
 }
 #main_content aside {
-    width: 15%;
+    width: 25%;
     justify-content: left;
+    margin: 0 auto auto 20px;
+}
+#main_content>aside>section {
+    border: 5px solid mediumaquamarine;
+    margin: 5vh 0px 5vh 0px;
 }
 #main_content>div {
-    width: 70%;
+    width: 75%;
+}
+#main_content>div>article {
+    margin-top: 5vh;
+    margin-bottom: 8vh;
+    border: 5px solid mediumaquamarine;
+    padding: 5%;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.3);
 }
 body>main article{
     width: 70%;
     margin: auto;
-}
-form{
-    text-align: center;
+    text-align: justify;
 }
 h2{
     text-align: center;
 }
 #Contact_us {
     display: flex;
+    flex-direction: column;
     align-items: baseline;
     justify-content: space-between;
-    font-family: "Roboto-Italic";
+    font-family: "Roboto-Italic", sans-serif;
+    padding-bottom: 5%;
 }
 #Contact_us li {
     list-style: none;
 }
 #Address {
     flex: 3;
+    padding: 5% 5% 5% 0%;
 }
 #Phone {
     flex: 1;
+    padding: 5% 5% 5% 0%;
 }
 #Email {
     flex: 1;
+    padding: 5% 5% 5% 0%;
 }
 #Facebook {
     flex: 1;
+    padding: 5% 5% 5% 0%;
+}
+#Facebook a {
+    padding: 5%;
+    color: #316FF6;
 }
 #Instagram {
     flex: 1;
+    padding: 5% 5% 5% 0%;
 }
-
+#Instagram a {
+    padding: 5%;
+    color: #C13584;
+}
+.external_link {
+    text-decoration: none;
+}
+#main_content footer a {
+    text-decoration: none;
+    font-family: "Roboto-Italic";
+}
+form{
+    text-align: center;
+}
 body > footer {
     background-color: aqua;
     display: flex;
+    margin-top: 0;
 }
 #footer_links {
     display: flex;
     list-style: none;
+    justify-content: space-around;
 }
 #footer_links>div {
     margin-left: 10px;
-
 }
 #footer_links>div>li>a {
     color: white;
@@ -133,4 +174,7 @@ body > footer {
 }
 img {
     border-radius: 10%;
+}
+hr {
+    color: aquamarine;
 }
